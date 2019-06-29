@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "alias": "suporte.reciclabc.now.sh",
+  "name": "suporte-reciclabc",
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" }
+  ]
+}
