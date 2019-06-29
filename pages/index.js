@@ -34,11 +34,14 @@ export default class extends React.Component {
     const { url } = this.props;
     console.log('this.props', url)
     if ( isMobile ) {
-      // return window.location = `reciclabc://auth/reset/${url.token}`;
-      window.location = `exp://127.0.0.1:19000/--/auth/reset/${url.query.token}`;
+      window.location = `reciclabc://auth/reset/${url.token}`;
+      // window.location = `exp://127.0.0.1:19000/--/auth/reset/${url.query.token}`;
+
       this.timeoutId = setTimeout(() => {
         window.location = 'https://reciclabc.com.br'
-      }, 300)
+      }, 200)
+    } else {
+      window.location = 'https://reciclabc.com.br'
     }
   }
 
